@@ -1,0 +1,10 @@
+<button 
+class='btn btn-primary'
+(click)='onToggleDetails()'>Display Details</button>
+<p *ngIf='display'>I love tuna</p>
+<p 
+    *ngFor='let log of logs; let i = index'
+    [ngStyle]="{backgroundColor: getColor(i)}"
+    >{{log}}
+</p>
+
